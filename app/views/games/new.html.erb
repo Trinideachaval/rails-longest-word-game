@@ -1,0 +1,10 @@
+<h1>Random letters</h1>
+
+<%=@letters%>
+
+<h3>Whats is the longes word you can find?</h3>
+<form action="/score" >
+  <input type="text" name="letters">
+  <input type="submit" value="Play!">
+  <%= hidden_field_tag :grid, @grid %>
+</form>
